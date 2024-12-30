@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi a Corpo Libero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Scheda Esercizi a Corpo Libero</h1>
+</header>
+
+<div class="container">
+    <div class="filter-section">
+        <label for="level">Livello:</label>
+        <select id="level" onchange="filterExercises()">
+            <option value="all">Tutti</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="esperto">Esperto</option>
+        </select>
+
+        <label for="bodyPart">Parte del corpo:</label>
+        <select id="bodyPart" onchange="filterExercises()">
+            <option value="all">Tutto il corpo</option>
+            <option value="gambe">Gambe</option>
+            <option value="petto">Petto e Tricipiti</option>
+            <option value="schiena">Schiena e Bicipiti</option>
+            <option value="addome">Addome</option>
+            <option value="spalle">Spalle</option>
+            <option value="cardio">Cardio e Resistenza</option>
+        </select>
+    </div>
+
+    <div id="exercise-list"></div>
+</div>
+
+<footer>
+    <p>Developed by <a href="http://www.biagioscaglia.com" target="_blank">Biagio Scaglia</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
